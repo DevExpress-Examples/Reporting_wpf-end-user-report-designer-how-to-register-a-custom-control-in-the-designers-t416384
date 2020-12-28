@@ -1,0 +1,52 @@
+﻿Imports DevExpress.Utils.Design
+Imports DevExpress.Utils.Serializing
+Imports DevExpress.XtraReports
+Imports DevExpress.XtraReports.Expressions
+Imports DevExpress.XtraReports.UI
+Imports System.ComponentModel
+
+Namespace WpfApp_CustomNumericLabel
+	<ToolboxItem(True), ToolboxSvgImage("WpfApp_CustomNumericLabel.NumericLabel.svg, WpfApp_CustomNumericLabel"), DefaultBindableProperty("Number"), DisplayName("Numeric Label")>
+	Public Class NumericLabel
+		Inherits XRLabel
+
+		<DefaultValue(0), XtraSerializableProperty>
+		Public Property Number() As Integer
+
+		' Set the "Browsable" and "EditorBrowsable" attributes to "false" and "Never"
+		' to hide the "Text" property from the "Properties" window and editor (IntelliSense).
+		<Browsable(False), EditorBrowsable(EditorBrowsableState.Never)>
+		Public Overrides Property Text() As String
+			Get
+				Return Number.ToString()
+			End Get
+			Set(ByVal value As String)
+				Dim i As Integer = Nothing
+				Number = If(Integer.TryParse(value, i), i, 0)
+			End Set
+		End Property
+
+		' Implement a static constructor as shown below to add
+		' the "Number" property to the property grid's "Expressions" tab.
+		Shared Sub New()
+			' An array of events in which the property should be available.
+			Dim eventNames() As String = { "BeforePrint" }
+
+			' The property position in the property grid's "Expressions" tab.
+			' 0 - fist, 1000 - last.
+			Dim position As Integer = 0
+
+			' An array of the property's inner properties.
+			Dim nestedBindableProperties() As String = Nothing
+
+			' The property's category in the property grid's "Expressions" tab.
+			' The empty string corresponds the root category.
+			Dim scopeName As String = ""
+
+			' Create and set description for the "Number" property.
+			Dim description As New ExpressionBindingDescription(eventNames, position, nestedBindableProperties, scopeName)
+
+			ExpressionBindingDescriptor.SetPropertyDescription(GetType(NumericLabel), NameOf(Number), New ExpressionBindingDescription(eventNames, position, nestedBindableProperties, scopeName))
+		End Sub
+	End Class
+End Namespace

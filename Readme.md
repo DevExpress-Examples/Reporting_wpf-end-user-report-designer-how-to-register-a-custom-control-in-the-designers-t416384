@@ -2,7 +2,7 @@
 
 This example demonstrates how to add a [custom numeric label control](https://docs.devexpress.com/XtraReports/3307) to the [End-User Report Designer](https://docs.devexpress.com/XtraReports/114104) Toolbox in a WPF application.
 
-![](CS/wpf-eurd-custom-numeric-label.png)
+![](Images/wpf-eurd-custom-numeric-label.png)
 
 Files to look at:
 

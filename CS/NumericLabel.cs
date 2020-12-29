@@ -29,17 +29,17 @@ namespace WpfApp_CustomNumericLabel {
         // Implement a static constructor as shown below to add
         // the "Number" property to the property grid's "Expressions" tab.
         static NumericLabel() {
-            // An array of events in which the property should be available.
+            // Specify an array of events in which the property should be available.
             string[] eventNames = new string[] { "BeforePrint" };
 
-            // The property position in the property grid's "Expressions" tab.
+            // Specify the property position in the property grid's "Expressions" tab.
             // 0 - fist, 1000 - last.
             int position = 0;
 
-            // An array of the property's inner properties.
+            // Specify an array of the property's inner properties.
             string[] nestedBindableProperties = null;
 
-            // The property's category in the property grid's "Expressions" tab.
+            // Specify the property's category in the property grid's "Expressions" tab.
             // The empty string corresponds the root category.
             string scopeName = "";
 

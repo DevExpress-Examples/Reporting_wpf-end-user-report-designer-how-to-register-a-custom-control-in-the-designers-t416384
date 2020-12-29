@@ -225,8 +225,5 @@
   <ItemGroup>
     <EmbeddedResource Include="NumericLabel.svg" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="wpf-eurd-custom-numeric-label.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

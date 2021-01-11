@@ -46,7 +46,7 @@ Namespace WpfApp_CustomNumericLabel
 			' Create and set description for the "Number" property.
 			Dim description As New ExpressionBindingDescription(eventNames, position, nestedBindableProperties, scopeName)
 
-			ExpressionBindingDescriptor.SetPropertyDescription(GetType(NumericLabel), NameOf(Number), New ExpressionBindingDescription(eventNames, position, nestedBindableProperties, scopeName))
+			ExpressionBindingDescriptor.SetPropertyDescription(GetType(NumericLabel), NameOf(Number), description)
 		End Sub
 	End Class
 End Namespace

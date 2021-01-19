@@ -1,4 +1,3 @@
-using DevExpress.Utils.Design;
 using DevExpress.Utils.Serializing;
 using DevExpress.XtraReports;
 using DevExpress.XtraReports.Expressions;
@@ -7,7 +6,6 @@ using System.ComponentModel;
 
 namespace WpfApp_CustomNumericLabel {
     [ToolboxItem(true)]
-    [ToolboxSvgImage("WpfApp_CustomNumericLabel.NumericLabel.svg, WpfApp_CustomNumericLabel")]
     [DefaultBindableProperty("Number")]
     [DisplayName("Numeric Label")]
     public class NumericLabel : XRLabel {
@@ -33,11 +31,11 @@ namespace WpfApp_CustomNumericLabel {
             string[] eventNames = new string[] { "BeforePrint" };
 
             // Specify the property position in the property grid's "Expressions" tab.
-            // 0 - fist, 1000 - last.
+            // 0 - first, 1000 - last.
             int position = 0;
 
             // Specify an array of the property's inner properties.
-            string[] nestedBindableProperties = null;
+            string[] nestedBindableProperties = new string[0];
 
             // Specify the property's category in the property grid's "Expressions" tab.
             // The empty string corresponds the root category.

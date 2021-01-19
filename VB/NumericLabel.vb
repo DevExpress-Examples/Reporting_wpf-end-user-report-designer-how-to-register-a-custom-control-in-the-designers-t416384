@@ -1,12 +1,11 @@
-﻿Imports DevExpress.Utils.Design
-Imports DevExpress.Utils.Serializing
+﻿Imports DevExpress.Utils.Serializing
 Imports DevExpress.XtraReports
 Imports DevExpress.XtraReports.Expressions
 Imports DevExpress.XtraReports.UI
 Imports System.ComponentModel
 
 Namespace WpfApp_CustomNumericLabel
-	<ToolboxItem(True), ToolboxSvgImage("WpfApp_CustomNumericLabel.NumericLabel.svg, WpfApp_CustomNumericLabel"), DefaultBindableProperty("Number"), DisplayName("Numeric Label")>
+	<ToolboxItem(True), DefaultBindableProperty("Number"), DisplayName("Numeric Label")>
 	Public Class NumericLabel
 		Inherits XRLabel
 
@@ -33,11 +32,11 @@ Namespace WpfApp_CustomNumericLabel
 			Dim eventNames() As String = { "BeforePrint" }
 
 			' Specify the property position in the property grid's "Expressions" tab.
-			' 0 - fist, 1000 - last.
+			' 0 - first, 1000 - last.
 			Dim position As Integer = 0
 
 			' Specify an array of the property's inner properties.
-			Dim nestedBindableProperties() As String = Nothing
+			Dim nestedBindableProperties(-1) As String
 
 			' Specify the property's category in the property grid's "Expressions" tab.
 			' The empty string corresponds the root category.

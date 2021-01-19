@@ -26,7 +26,6 @@
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.numericLabel1 = new WpfApp_CustomNumericLabel.NumericLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -39,19 +38,7 @@
             // 
             // Detail
             // 
-            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.numericLabel1});
             this.Detail.Name = "Detail";
-            // 
-            // numericLabel1
-            // 
-            this.numericLabel1.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 10.00001F);
-            this.numericLabel1.Multiline = true;
-            this.numericLabel1.Name = "numericLabel1";
-            this.numericLabel1.Number = 42;
-            this.numericLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.numericLabel1.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.numericLabel1.Text = "42";
             // 
             // XtraReport1
             // 
@@ -60,7 +47,7 @@
             this.BottomMargin,
             this.Detail});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Version = "20.2";
+            this.Version = "20.1";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -70,6 +57,5 @@
         private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
         private DevExpress.XtraReports.UI.DetailBand Detail;
-        private NumericLabel numericLabel1;
     }
 }

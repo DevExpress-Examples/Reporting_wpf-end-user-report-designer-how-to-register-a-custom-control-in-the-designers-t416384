@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:WpfApp_CustomNumericLabel"
         xmlns:dxrud="http://schemas.devexpress.com/winfx/2008/xaml/reports/userdesigner" x:Class="WpfApp_CustomNumericLabel.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
 
-        <dxrud:ReportDesigner x:Name="reportDesigner" Loaded="reportDesigner_Loaded"/>
+        <dxrud:ReportDesigner x:Name="reportDesigner"/>
 
     </Grid>
 </Window>

@@ -6,7 +6,7 @@ This example demonstrates how to add a [custom numeric label control](https://do
 
 Files to look at:
 
-* CS: [NumericLabel.cs](https://github.com/DevExpress-Examples/Reporting_wpf-end-user-report-designer-how-to-register-a-custom-control-in-the-designers-t416384/blob/2020.2/CS/NumericLabel.cs) and [MainWindow.xaml.cs](https://github.com/DevExpress-Examples/Reporting_wpf-end-user-report-designer-how-to-register-a-custom-control-in-the-designers-t416384/blob/2020.2/CS/MainWindow.xaml.cs).
-* VB: [NumericLabel.vb](https://github.com/DevExpress-Examples/Reporting_wpf-end-user-report-designer-how-to-register-a-custom-control-in-the-designers-t416384/blob/2020.2/VB/NumericLabel.vb) and [MainWindow.xaml.vb](https://github.com/DevExpress-Examples/Reporting_wpf-end-user-report-designer-how-to-register-a-custom-control-in-the-designers-t416384/blob/2020.2/VB/MainWindow.xaml.vb).
+* CS: [NumericLabel.cs](https://github.com/DevExpress-Examples/Reporting_wpf-end-user-report-designer-how-to-register-a-custom-control-in-the-designers-t416384/blob/2020.1/CS/NumericLabel.cs) and [MainWindow.xaml.cs](https://github.com/DevExpress-Examples/Reporting_wpf-end-user-report-designer-how-to-register-a-custom-control-in-the-designers-t416384/blob/2020.1/CS/MainWindow.xaml.cs).
+* VB: [NumericLabel.vb](https://github.com/DevExpress-Examples/Reporting_wpf-end-user-report-designer-how-to-register-a-custom-control-in-the-designers-t416384/blob/2020.1/VB/NumericLabel.vb) and [MainWindow.xaml.vb](https://github.com/DevExpress-Examples/Reporting_wpf-end-user-report-designer-how-to-register-a-custom-control-in-the-designers-t416384/blob/2020.1/VB/MainWindow.xaml.vb).
 
 Refer to the following topic for more details: [Add a Custom Control to the Report Designer Toolbox (WPF)](https://docs.devexpress.com/XtraReports/116767).

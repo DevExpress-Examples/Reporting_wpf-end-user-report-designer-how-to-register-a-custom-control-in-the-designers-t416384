@@ -26,7 +26,6 @@
 			Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
 			Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
 			Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
-			Me.numericLabel1 = New WpfApp_CustomNumericLabel.NumericLabel()
 			CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
 			' 
 			' TopMargin
@@ -39,24 +38,13 @@
 			' 
 			' Detail
 			' 
-			Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.numericLabel1})
 			Me.Detail.Name = "Detail"
-			' 
-			' numericLabel1
-			' 
-			Me.numericLabel1.LocationFloat = New DevExpress.Utils.PointFloat(10.00001F, 10.00001F)
-			Me.numericLabel1.Multiline = True
-			Me.numericLabel1.Name = "numericLabel1"
-			Me.numericLabel1.Number = 42
-			Me.numericLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
-			Me.numericLabel1.SizeF = New System.Drawing.SizeF(100F, 23F)
-			Me.numericLabel1.Text = "42"
 			' 
 			' XtraReport1
 			' 
 			Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() { Me.TopMargin, Me.BottomMargin, Me.Detail})
 			Me.Font = New System.Drawing.Font("Arial", 9.75F)
-			Me.Version = "20.2"
+			Me.Version = "20.1"
 			CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
 		End Sub
@@ -66,6 +54,5 @@
 		Private TopMargin As DevExpress.XtraReports.UI.TopMarginBand
 		Private BottomMargin As DevExpress.XtraReports.UI.BottomMarginBand
 		Private Detail As DevExpress.XtraReports.UI.DetailBand
-		Private numericLabel1 As NumericLabel
 	End Class
 End Namespace
